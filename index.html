@@ -31,16 +31,19 @@
                 </div>
             </div>
             <div class="flex items-center gap-2">
-                <div class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center lg:gap-2 px-2 py-1">
+                <div
+                    class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center lg:gap-2 px-2 py-1">
                     <h1><span id="heart-count">0</span></h1>
                     <img src="assets/heart.png" alt="" class="max-h-6">
 
                 </div>
-                <div class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center gap-2 px-2 py-1">
+                <div
+                    class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center gap-2 px-2 py-1">
                     <h1><span id="coin">100</span></h1>
                     <img src="assets/coin.png" alt="" class="max-h-6">
                 </div>
-                <button class="px-2 py-1 lg:px-9 lg:py-2 rounded-[50px] bg-[#00A63E] text-white"><span>2</span> Copy</button>
+                <button class="px-2 py-1 lg:px-9 lg:py-2 rounded-[50px] bg-[#00A63E] text-white"><span id="copy-count">0</span>
+                    Copy</button>
             </div>
         </nav>
         <section class="lg:max-h-[300px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5">
@@ -56,7 +59,7 @@
         <div class="lg:w-full lg:max-w-3/4 ... grid grid-cols-1 lg:grid-cols-3 lg:gap-[30px] gap-4 p-2">
 
             <!-- all  -->
-            <div class="bg-white p-8 rounded-[24px]">
+            <div class="bg-white p-2 lg:p-8 rounded-[24px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="" class="max-h-[50px] rounded-[10px] bg-red-200 p-2">
                     <i class="fa-regular fa-heart heart"></i>
@@ -76,7 +79,7 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="all-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -106,7 +109,7 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="police-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -133,7 +136,7 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="fire-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -160,7 +163,7 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="ambulance-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -187,7 +190,7 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="help-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -216,7 +219,7 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="anti-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -243,8 +246,8 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px] font-medium  rounded-[10px]"><i
-                                class="fa-regular fa-copy pr-3"></i> Copy</button>
+                        <button class="py-2 border-2 text-gray-400 px-[52px] font-medium  rounded-[10px]"
+                            id="electricity-copy-btn"><i class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
                         <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] font-semibold text-white"
@@ -270,7 +273,7 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="brac-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -298,7 +301,7 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]"><i
+                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]" id="rail-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
@@ -318,8 +321,8 @@
                             <i class="fa-regular fa-clock text-gray-500"></i>
                             <h1 class="font-medium text-[20px]">Call History</h1>
                         </div>
-                        <button
-                            class="px-9 py-2 rounded-[50px] bg-[#00A63E] text-white font-semibold text-[16px]" id="clear-btn">Clear</button>
+                        <button class="px-9 py-2 rounded-[50px] bg-[#00A63E] text-white font-semibold text-[16px]"
+                            id="clear-btn">Clear</button>
                     </div>
                 </div>
                 <div class="px-6 pb-3" id="history">

@@ -203,10 +203,78 @@ document.getElementById("rail-btn").addEventListener("click", function (e) {
 
 // clear button function 
 
-document.getElementById("clear-btn").addEventListener("click", function(e){
+document.getElementById("clear-btn").addEventListener("click", function (e) {
     e.preventDefault();
     historyData.length = 0;
     document.getElementById('history').innerHTML = "";
 })
 
 
+// copy function
+
+function copy(item) {
+    const getCopyCount = parseInt(document.getElementById("copy-count").innerText);
+
+    const text = item;
+
+    navigator.clipboard.writeText(text);
+
+    alert("The number has been copied: " + item);
+
+    document.getElementById("copy-count").innerText = getCopyCount + 1;
+
+}
+
+document.getElementById("all-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("all-number").innerText;
+    copy(item);
+})
+
+document.getElementById("police-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("police-number").innerText;
+    copy(item);
+})
+
+document.getElementById("fire-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("fire-number").innerText;
+    copy(item);
+})
+
+document.getElementById("ambulance-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("ambulance-number").innerText;
+    copy(item);
+})
+
+document.getElementById("help-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("help-number").innerText;
+    copy(item);
+})
+
+document.getElementById("anti-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("anti-number").innerText;
+    copy(item);
+})
+
+document.getElementById("electricity-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("electricity-number").innerText;
+    copy(item);
+})
+
+document.getElementById("brac-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("brac-number").innerText;
+    copy(item);
+})
+
+document.getElementById("rail-copy-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    const item = document.getElementById("rail-number").innerText;
+    copy(item);
+})
