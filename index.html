@@ -23,31 +23,35 @@
 
 <body class="lg:max-w-[1920px] mx-auto hind-madurai-ligh">
     <header>
-        <nav class="flex justify-between items-center lg:py-[16px] lg:px-[50px] lg:min-h[50px] px-3 bg-white">
+        <nav class="lg:flex justify-between items-center lg:py-[16px] lg:px-[50px] lg:min-h[50px] px-3 bg-white">
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="" class="max-h-[50px]">
                 <div>
                     <h1 class="text-[24px] font-black text-[#006747]">Emergency <br>Service</h1>
                 </div>
             </div>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 ">
                 <div
-                    class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center lg:gap-2 px-2 py-1">
+                    class="px-9 py-2 rounded-[50px] bg-green-100 flex justify-around items-center gap-2">
                     <h1><span id="heart-count">0</span></h1>
                     <img src="assets/heart.png" alt="" class="max-h-6">
 
                 </div>
                 <div
-                    class="lg:px-9 lg:py-2 rounded-[50px] bg-green-100 flex justify-around items-center gap-2 px-2 py-1">
+                    class="px-9 py-2 rounded-[50px] bg-green-100 flex justify-around items-center gap-2">
                     <h1><span id="coin">100</span></h1>
                     <img src="assets/coin.png" alt="" class="max-h-6">
                 </div>
-                <h1 class="px-2 py-1 lg:px-9 lg:py-2 rounded-[50px] bg-[#00A63E] text-white"><span
+                <!-- <h1 class="px-9 py-2 rounded-[50px] bg-[#00A63E] text-white"><span
                         id="copy-count">0</span>
-                    Copy</h1>
+                    Copy</h1> -->
+                <div class="px-9 py-2 rounded-[50px] bg-[#00A63E] text-white flex gap-2">
+                    <h1 id="copy-count">0</h1>
+                    <h1>Copy</h1>
+                </div>
             </div>
         </nav>
-        <section class="lg:max-h-[300px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5">
+        <section class="lg:max-h-[300px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5 mt-3">
             <div class="text-center mx-auto">
                 <img src="assets/logo-dark.png" alt="" class="h-[90px] mx-auto">
                 <h1 class="font-bold text-[40px] text-[#FFFFFF]">Emergency Service Directory</h1>
@@ -60,7 +64,7 @@
         <div class="lg:w-full lg:max-w-3/4 ... grid grid-cols-1 lg:grid-cols-3 lg:gap-[30px] gap-4 p-2">
 
             <!-- all  -->
-            <div class="bg-white p-2 lg:p-8 rounded-[24px]">
+            <div class="bg-white p-8 rounded-[24px]">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="" class="max-h-[50px] rounded-[10px] bg-red-200 p-2">
                     <i class="fa-regular fa-heart heart"></i>
@@ -80,11 +84,11 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]  hover:bg-gray-800" id="all-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px]  hover:bg-gray-800" id="all-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="call-all"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="call-all"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
 
@@ -110,11 +114,11 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px] hover:bg-gray-800" id="police-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px] hover:bg-gray-800" id="police-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="police-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="police-btn"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
@@ -137,11 +141,11 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]  hover:bg-gray-800" id="fire-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px]  hover:bg-gray-800" id="fire-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="fire-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="fire-btn"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
@@ -164,11 +168,11 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px]  hover:bg-gray-800" id="ambulance-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px]  hover:bg-gray-800" id="ambulance-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="ambulance-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white  hover:bg-gray-800" id="ambulance-btn"><i
                                 class="fa-solid fa-phone pr-3" id="ambulance-btn"></i>Call</button>
                     </div>
                 </div>
@@ -191,16 +195,15 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px] hover:bg-gray-800" id="help-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px] hover:bg-gray-800" id="help-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="help-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="help-btn"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
             </div>
-
             <!-- Anti-Corruption Helpline  -->
             <div class="bg-white p-8 rounded-[24px]">
                 <div class="flex justify-between items-center">
@@ -220,11 +223,11 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px] hover:bg-gray-800" id="anti-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px] hover:bg-gray-800" id="anti-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="anti-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="anti-btn"><i
                                 class="fa-solid fa-phone pr-3" id="anti-btn"></i>Call</button>
                     </div>
                 </div>
@@ -247,11 +250,11 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px] font-medium  rounded-[10px] hover:bg-gray-800"
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px] font-medium  rounded-[10px] hover:bg-gray-800"
                             id="electricity-copy-btn"><i class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] font-semibold text-white hover:bg-gray-800"
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] font-semibold text-white hover:bg-gray-800"
                             id="electricity-btn"><i class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
@@ -274,11 +277,11 @@
                 </div>
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px] hover:bg-gray-800" id="brac-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px] hover:bg-gray-800" id="brac-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="brac-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="brac-btn"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
@@ -302,11 +305,11 @@
 
                 <div class="flex justify-between items-center pt-6">
                     <div class="flex items-center">
-                        <button class="py-2 border-2 text-gray-400 px-[52px]  rounded-[10px] hover:bg-gray-800" id="rail-copy-btn"><i
+                        <button class="py-2 border-2 text-gray-400 px-[40px] lg:px-[52px]  rounded-[10px] hover:bg-gray-800" id="rail-copy-btn"><i
                                 class="fa-regular fa-copy pr-3"></i> Copy</button>
                     </div>
                     <div class="flex items-center">
-                        <button class="py-[10px] px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="rail-btn"><i
+                        <button class="py-[10px] px-[45px] lg:px-[57px] bg-green-700 rounded-[10px] text-white hover:bg-gray-800" id="rail-btn"><i
                                 class="fa-solid fa-phone pr-3"></i>Call</button>
                     </div>
                 </div>
